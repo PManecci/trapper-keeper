@@ -2,9 +2,10 @@
   "name": "trapper-keeper",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/PManecci/trapper-keeper#readme",
   "dependencies": {
+    "express": "^4.17.2",
     "jest": "^27.4.7"
   }
 }
