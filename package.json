@@ -1,0 +1,23 @@
+{
+  "name": "trapper-keeper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PManecci/trapper-keeper.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PManecci/trapper-keeper/issues"
+  },
+  "homepage": "https://github.com/PManecci/trapper-keeper#readme",
+  "dependencies": {
+    "jest": "^27.4.7"
+  }
+}
