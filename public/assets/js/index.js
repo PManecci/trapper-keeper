@@ -12,12 +12,12 @@ if (window.location.pathname === '/notes') {
   noteList = document.querySelectorAll('.list-container .list-group');
 }
 
-// Show an element
+//Show an element
 const show = (elem) => {
   elem.style.display = 'inline';
 };
 
-// Hide an element
+//Hide an element
 const hide = (elem) => {
   elem.style.display = 'none';
 };
@@ -37,9 +37,20 @@ const saveNote = (note) =>
   fetch('/api/notes', {
     method: 'POST',
     headers: {
+      Accept: 'application/json',
       'Content-Type': 'application/json',
     },
-    body: JSON.stringify(note),
+    body: JSON.stringify(note)
+  })
+    .then(response => {
+      if(response.ok) {
+        return response.json();
+      }
+      alert('Error: ' + response.statusText);
+    })
+    .then(postResponse => {
+      console.log(postResponse);
+      alert('Successfully Saved New Note!');
   });
 
 const deleteNote = (id) =>
