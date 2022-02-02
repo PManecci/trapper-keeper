@@ -20,7 +20,9 @@
   "homepage": "https://github.com/PManecci/trapper-keeper#readme",
   "dependencies": {
     "express": "^4.17.2",
-    "generate-unique-id": "^2.0.1",
-    "jest": "^27.4.7"
+    "fs-extra": "^10.0.0",
+    "jest": "^27.4.7",
+    "short-unique-id": "^4.4.4",
+    "uuid": "^8.3.2"
   }
 }
