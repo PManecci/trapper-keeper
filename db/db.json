@@ -1,7 +1,12 @@
 {
   "notes": [
     {
-      "id": "HAWTte"
+      "id": "123",
+      "title": "Sample Note",
+      "text": "blah blah blah"
+    },
+    {
+      "id": "2SvG5j"
     }
   ]
 }
